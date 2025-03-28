@@ -7,6 +7,12 @@ hexagram-downloader i wish is a downloador like [`Gopeed`](https://gopeed.com), 
 ## Inspire
 
 [`Gopeed`](https://gopeed.com) Modern Downloader
+
 [`dprint`](https://dprint.dev) Wasm plugin system
+
 [`hyper`](https://hyper.rs/) A efficient HTTP library
+
 [`rustls`](https://github.com/rustls/rustls) TLS library
+
+....
+
