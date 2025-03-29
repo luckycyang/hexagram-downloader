@@ -23,7 +23,7 @@
         rustpkg = pkgs.rust-bin.selectLatestNightlyWith (toolchain:
           toolchain.default.override {
             extensions = ["rust-src" "rustfmt" "clippy" "rust-analyzer"]; # rust-src for rust-analyzer
-            targets = ["x86_64-unknown-linux-gnu" "thumbv7m-none-eabi"];
+            targets = ["x86_64-unknown-linux-gnu" "wasm32-unknown-unknown"];
           });
       in
         with pkgs; {
@@ -35,6 +35,8 @@
                 eza
                 fd
                 rustpkg
+
+                wabt
               ];
               shellHook = ''
                 alias ls=eza
